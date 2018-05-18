@@ -2,7 +2,7 @@ require 'rails_helper'
 
 
 describe 'a user' do
-  descrbie ' visits the book show page' do 
+  describe ' visits the book show page' do 
     it 'should display the book title' do
       book = Book.create!(title:"American Gods")
 
