@@ -74,7 +74,7 @@ describe 'a user' do
       score1 = 2
       score2 = 4
       user.reviews.create!(score:score1, text: text1, book_id: book.id)
-      user.reviews.create!(score:score2, text: text2, book_id: book.id)
+      user2.reviews.create!(score:score2, text: text2, book_id: book.id)
       
       visit book_path book
       within(".highest_rating") do
