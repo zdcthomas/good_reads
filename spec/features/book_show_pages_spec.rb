@@ -4,7 +4,8 @@ require 'rails_helper'
 describe 'a user' do
   describe ' visits the book show page' do 
     it 'should display the book title' do
-      book = Book.create!(title:"American Gods")
+      title = "American Gods"
+      book = Book.create!(title: title)
 
       visit book_path book
 
